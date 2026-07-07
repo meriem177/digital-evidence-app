@@ -2,6 +2,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { FaArrowLeft, FaFilePdf, FaShieldAlt, FaWaveSquare } from "react-icons/fa";
 import { getEvidence, verifyIntegrity } from "../services/evidenceService";
+import { API_URL } from "../services/api";
 import { useTranslation } from "react-i18next";
 
 function EvidenceDetails() {
@@ -49,7 +50,7 @@ function EvidenceDetails() {
     }
 
     const assetBaseUrl = useMemo(
-        () => (import.meta.env.VITE_API_URL || "http://localhost:5000/api").replace(/\/api\/?$/, ""),
+        () => (API_URL || "http://localhost:5000").replace(/\/$/, ""),
         []
     );
 
