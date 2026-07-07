@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "brand": "DEMS",
+    "dashboard": "لوحة التحكم",
+    "addEvidence": "إضافة دليل",
+    "evidenceList": "قائمة الأدلة",
+    "logout": "تسجيل الخروج",
+    "confirmLogout": "هل أنت متأكد أنك تريد تسجيل الخروج؟",
+    "user": {
+      "noEmail": "لا يوجد بريد إلكتروني"
+    }
+  },
+  "login": {
+    "title": "تسجيل دخول الأدلة الرقمية",
+    "subtitle": "سجّل الدخول لإدارة الأدلة ومراجعة نتائج تحليل الذكاء الاصطناعي.",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "remember": "ابق مسجلاً الدخول",
+    "signingIn": "جاري تسجيل الدخول...",
+    "login": "الدخول",
+    "failed": "فشل تسجيل الدخول. تحقق من بياناتك وحاول مرة أخرى."
+  },
+  "dashboard": {
+    "title": "لوحة معلومات الأدلة الرقمية",
+    "subtitle": "نظرة عامة على الحالات المحمّلة وأداء التحليل.",
+    "refresh": "تحديث",
+    "totalCases": "إجمالي الحالات",
+    "authentic": "أصلي",
+    "manipulated": "معدل التلاعب",
+    "avgConfidence": "متوسط الثقة",
+    "loadingStatistics": "جاري تحميل الإحصاءات...",
+    "noEvidence": "لم يتم تحميل أي دليل بعد.",
+    "loadingInsights": "جاري تحميل النتائج...",
+    "keyInsights": "أهم النتائج",
+    "modelConfidence": "ثقة النموذج",
+    "allUploaded": "جميع الأدلة المحمّلة"
+    ,"loadError": "غير قادر على تحميل الإحصاءات. يرجى تحديث الصفحة."
+  },
+  "evidenceList": {
+    "title": "قائمة الأدلة",
+    "subtitle": "ابحث واستعرض الحالات المحمّلة مع نتائج الذكاء الاصطناعي.",
+    "searchPlaceholder": "البحث برقم القضية",
+    "all": "الكل",
+    "authentic": "أصلي",
+    "manipulated": "مُعدّل",
+    "newest": "الأحدث أولاً",
+    "oldest": "الأقدم أولاً",
+    "loading": "جاري تحميل الأدلة...",
+    "noResults": "لا توجد أدلة تطابق البحث.",
+    "loadError": "غير قادر على جلب قائمة الأدلة. حاول مرة أخرى لاحقًا.",
+    "view": "عرض",
+    "showing": "عرض {{count}} من {{total}} حالة"
+  },
+  "addEvidence": {
+    "title": "إضافة دليل جديد",
+    "subtitle": "حمّل دليل الحالة وأنشئ تحليلًا بالذكاء الاصطناعي وخريطة حرارة وتقريرًا جنائيًا.",
+    "uploadBadge": "ميزة التحميل",
+    "dragDrop": "اسحب وأفلت ملف الدليل هنا",
+    "accepted": "JPEG، PNG، JPG، أو MP4. الحجم الأقصى 50 ميغابايت.",
+    "browse": "استعرض الملف",
+    "selectedFile": "الملف المحدد: {{name}} ({{size}} ميغابايت)",
+    "preview": "معاينة",
+    "caseNumber": "رقم القضية",
+    "caseType": "نوع القضية",
+    "investigator": "المحقق",
+    "seizureLocation": "مكان الحجز",
+    "seizureDate": "تاريخ الحجز",
+    "description": "الوصف",
+    "requiredFields": "يرجى ملء جميع الحقول المطلوبة.",
+    "selectFile": "يرجى اختيار ملف قبل التحميل.",
+    "unsupportedFile": "نوع الملف غير مدعوم.",
+    "uploading": "جاري رفع الملف...",
+    "uploadSuccess": "تم رفع الدليل بنجاح.",
+    "uploadFailed": "فشل الرفع. حاول مرة أخرى.",
+    "upload": "تحميل الدليل"
+  },
+  "evidenceDetails": {
+    "title": "تفاصيل الدليل",
+    "subtitle": "ملخص الحالة، تقرير الذكاء الاصطناعي، وأدوات التحقق.",
+    "back": "عودة",
+    "originalEvidence": "الدليل الأصلي",
+    "noFile": "لا يوجد ملف.",
+    "aiHeatmap": "خريطة حرارة AI",
+    "heatmapUnavailable": "خريطة الحرارة غير متوفرة.",
+    "caseInformation": "معلومات القضية",
+    "noDescription": "لم يتم تقديم وصف.",
+    "aiSummary": "ملخص AI",
+    "confidence": "الثقة",
+    "aiAnalysis": "تحليل AI",
+    "noAnalysis": "لا يوجد تحليل تفصيلي.",
+    "metadata": "البيانات الوصفية",
+    "noMetadata": "لا توجد بيانات وصفية.",
+    "verifyIntegrity": "التحقق من السلامة",
+    "verifying": "جارٍ التحقق...",
+    "integrityStatus": "حالة السلامة",
+    "evidenceIntact": "الدليل سليم",
+    "evidenceModified": "الدليل مُعدّل",
+    "runIntegrity": "شغّل التحقق للتأكد من صحة الأدلة.",
+    "loadError": "غير قادر على تحميل تفاصيل الدليل. حاول مرة أخرى لاحقًا.",
+    "integrityFailed": "فشل التحقق من السلامة. حاول مرة أخرى.",
+    "downloadReport": "تحميل التقرير",
+    "uploaded": "تم الرفع"
+  },
+  "generic": {
+    "loading": "جاري التحميل...",
+    "noData": "لا توجد بيانات",
+    "view": "عرض"
+  },
+  "buttons": {
+    "refresh": "تحديث",
+    "submit": "إرسال",
+    "cancel": "إلغاء"
+  }
+}

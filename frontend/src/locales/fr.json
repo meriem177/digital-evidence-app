@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "brand": "DEMS",
+    "dashboard": "Tableau de bord",
+    "addEvidence": "Ajouter une preuve",
+    "evidenceList": "Liste des preuves",
+    "logout": "Se déconnecter",
+    "confirmLogout": "Êtes-vous sûr de vouloir vous déconnecter ?",
+    "user": {
+      "noEmail": "Pas d'email"
+    }
+  },
+  "login": {
+    "title": "Connexion Evidence Numérique",
+    "subtitle": "Connectez-vous pour gérer les preuves et consulter les résultats d'analyse IA.",
+    "email": "Email",
+    "password": "Mot de passe",
+    "remember": "Rester connecté",
+    "signingIn": "Connexion...",
+    "login": "Se connecter",
+    "failed": "Échec de la connexion. Vérifiez vos identifiants et réessayez."
+  },
+  "dashboard": {
+    "title": "Tableau de bord Evidence Numérique",
+    "subtitle": "Vue d'ensemble des cas téléchargés et des performances de l'IA.",
+    "refresh": "Rafraîchir",
+    "totalCases": "Nombre total de cas",
+    "authentic": "Authentique",
+    "manipulated": "Manipulé",
+    "avgConfidence": "Confiance Moyenne",
+    "loadingStatistics": "Chargement des statistiques...",
+    "noEvidence": "Aucune preuve n'a été téléchargée.",
+    "loadingInsights": "Chargement des insights...",
+    "keyInsights": "Points clés",
+    "modelConfidence": "Confiance du modèle",
+    "allUploaded": "Toutes les preuves téléchargées"
+    ,"loadError": "Impossible de charger les statistiques. Veuillez actualiser la page."
+  },
+  "evidenceList": {
+    "title": "Liste des preuves",
+    "subtitle": "Recherchez et consultez les cas téléchargés avec les résultats IA.",
+    "searchPlaceholder": "Rechercher par numéro de dossier",
+    "all": "Tous",
+    "authentic": "Authentique",
+    "manipulated": "Manipulé",
+    "newest": "Les plus récents",
+    "oldest": "Les plus anciens",
+    "loading": "Chargement des preuves...",
+    "noResults": "Aucune preuve ne correspond à votre recherche.",
+    "loadError": "Impossible de récupérer la liste des preuves. Veuillez réessayer plus tard.",
+    "view": "Voir",
+    "showing": "Affichage de {{count}} sur {{total}} cas"
+  },
+  "addEvidence": {
+    "title": "Ajouter une nouvelle preuve",
+    "subtitle": "Téléchargez la preuve du cas et générez l'analyse IA, la heatmap et le rapport médico-légal.",
+    "uploadBadge": "Fonction upload",
+    "dragDrop": "Glisser-déposer le fichier ici",
+    "accepted": "JPEG, PNG, JPG ou MP4. Maximum 50 Mo.",
+    "browse": "Parcourir",
+    "selectedFile": "Fichier sélectionné : {{name}} ({{size}} Mo)",
+    "preview": "Aperçu",
+    "caseNumber": "Numéro de dossier",
+    "caseType": "Type de dossier",
+    "investigator": "Enquêteur",
+    "seizureLocation": "Lieu de saisie",
+    "seizureDate": "Date de saisie",
+    "description": "Description",
+    "requiredFields": "Veuillez remplir tous les champs requis.",
+    "selectFile": "Veuillez sélectionner un fichier avant de télécharger.",
+    "unsupportedFile": "Type de fichier non pris en charge.",
+    "uploading": "Téléchargement...",
+    "uploadSuccess": "Preuve téléchargée avec succès.",
+    "uploadFailed": "Échec du téléchargement. Réessayez.",
+    "upload": "Téléverser la preuve"
+  },
+  "evidenceDetails": {
+    "title": "Détails de la preuve",
+    "subtitle": "Résumé détaillé du cas, rapport IA et contrôles d'intégrité.",
+    "back": "Retour",
+    "originalEvidence": "Preuve originale",
+    "noFile": "Aucun fichier disponible.",
+    "aiHeatmap": "Heatmap IA",
+    "heatmapUnavailable": "Heatmap indisponible.",
+    "caseInformation": "Informations du cas",
+    "noDescription": "Aucune description fournie.",
+    "aiSummary": "Résumé IA",
+    "confidence": "Confiance",
+    "aiAnalysis": "Analyse IA",
+    "noAnalysis": "Aucune analyse détaillée disponible.",
+    "metadata": "Métadonnées",
+    "noMetadata": "Aucune métadonnée trouvée.",
+    "verifyIntegrity": "Vérifier l'intégrité",
+    "verifying": "Vérification...",
+    "integrityStatus": "État d'intégrité",
+    "evidenceIntact": "La preuve est intacte",
+    "evidenceModified": "Preuve modifiée",
+    "runIntegrity": "Exécutez la vérification d'intégrité pour confirmer l'authenticité.",
+    "loadError": "Impossible de charger les détails de la preuve. Veuillez réessayer plus tard.",
+    "integrityFailed": "La vérification d'intégrité a échoué. Veuillez réessayer.",
+    "downloadReport": "Télécharger le rapport",
+    "uploaded": "Téléversé"
+  },
+  "generic": {
+    "loading": "Chargement...",
+    "noData": "Aucune donnée",
+    "view": "Voir"
+  },
+  "buttons": {
+    "refresh": "Rafraîchir",
+    "submit": "Envoyer",
+    "cancel": "Annuler"
+  }
+}
