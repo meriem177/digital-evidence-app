@@ -2,20 +2,31 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
+const normalizeEmail = (value) => {
+    if (typeof value !== "string") {
+        return "";
+    }
+
+    return value.trim().toLowerCase();
+};
+
+exports.normalizeEmail = normalizeEmail;
+
 exports.register = async (req, res) => {
     try {
 
         const { fullName, email, password, role } = req.body;
+        const normalizedEmail = normalizeEmail(email);
 
         // Vérifier les champs obligatoires
-        if (!fullName || !email || !password) {
+        if (!fullName || !normalizedEmail || !password) {
             return res.status(400).json({
                 message: "Tous les champs sont obligatoires"
             });
         }
 
         // Vérifier si l'utilisateur existe déjà
-        const existingUser = await User.findOne({ email });
+        const existingUser = await User.findOne({ email: normalizedEmail });
 
         if (existingUser) {
             return res.status(400).json({
@@ -29,7 +40,7 @@ exports.register = async (req, res) => {
         // Créer un nouvel utilisateur
         const user = new User({
             fullName,
-            email,
+            email: normalizedEmail,
             password: hashedPassword,
             role
         });
@@ -54,16 +65,17 @@ exports.login = async (req, res) => {
     try {
 
         const { email, password } = req.body;
+        const normalizedEmail = normalizeEmail(email);
 
         // Vérifier les champs
-        if (!email || !password) {
+        if (!normalizedEmail || !password) {
             return res.status(400).json({
                 message: "Email et mot de passe obligatoires"
             });
         }
 
         // Chercher l'utilisateur
-        const user = await User.findOne({ email });
+        const user = await User.findOne({ email: normalizedEmail });
 
         if (!user) {
             return res.status(404).json({
