@@ -66,7 +66,13 @@ exports.login = async (req, res) => {
 
         const { email, password } = req.body;
         const normalizedEmail = normalizeEmail(email);
+console.log("========== LOGIN ==========");
+console.log("Body reçu :", req.body);
+console.log("Email normalisé :", normalizedEmail);
 
+const users = await User.find({});
+console.log("Nombre d'utilisateurs :", users.length);
+console.log("Emails dans MongoDB :", users.map(u => u.email));
         // Vérifier les champs
         if (!normalizedEmail || !password) {
             return res.status(400).json({
@@ -76,7 +82,7 @@ exports.login = async (req, res) => {
 
         // Chercher l'utilisateur
         const user = await User.findOne({ email: normalizedEmail });
-
+console.log("Utilisateur trouvé :", user);
         if (!user) {
             return res.status(404).json({
                 message: "Utilisateur introuvable"
