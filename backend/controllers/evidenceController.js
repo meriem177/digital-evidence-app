@@ -90,9 +90,14 @@ exports.createEvidence = async (req, res) => {
 
         res.status(201).json({ message: "Evidence created successfully", evidence });
     } catch (error) {
-        console.error("createEvidence error:", error);
-        res.status(500).json({ message: "An error occurred while creating evidence." });
-    }
+    console.error("========== CREATE EVIDENCE ERROR ==========");
+    console.error(error);
+    console.error(error.stack);
+
+    res.status(500).json({
+        message: error.message
+    });
+}
 };
 
 exports.verifyIntegrity = async (req, res) => {
@@ -133,10 +138,15 @@ exports.getAllEvidences = async (req, res) => {
     try {
         const evidences = await Evidence.find().sort({ createdAt: -1 });
         res.json(evidences);
-    } catch (error) {
-        console.error("getAllEvidences error:", error);
-        res.status(500).json({ message: "Unable to retrieve evidence list." });
-    }
+   } catch (error) {
+    console.error("========== GET EVIDENCES ERROR ==========");
+    console.error(error);
+    console.error(error.stack);
+
+    res.status(500).json({
+        message: error.message
+    });
+} 
 };
 
 exports.getEvidenceById = async (req, res) => {
